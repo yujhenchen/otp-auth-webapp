@@ -1,5 +1,5 @@
 import { Button, Label, TextInput } from "flowbite-react";
-import { HiMail } from "react-icons/hi";
+import { HiMail, HiUser } from "react-icons/hi";
 
 export default function SignUp() {
   function onSubmit() {}
@@ -13,7 +13,7 @@ export default function SignUp() {
           <TextInput
             id="name"
             type="text"
-            icon={HiMail}
+            icon={HiUser}
             placeholder="name@flowbite.com"
             required
           />
