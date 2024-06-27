@@ -1,7 +1,7 @@
 import { Button, Label, TextInput } from "flowbite-react";
 import { HiMail } from "react-icons/hi";
 
-export default function SignIn() {
+export default function SignUp() {
   function onSubmit() {}
   return (
     <div>
