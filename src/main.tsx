@@ -6,11 +6,13 @@ import "./index.css";
 import Login from "./pages/auth/login.tsx";
 import SignUp from "./pages/auth/signup.tsx";
 import Logout from "./pages/auth/logout.tsx";
+import Error from "./pages/error.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
   },
   {
     path: "/signup",
