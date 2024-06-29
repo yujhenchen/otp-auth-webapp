@@ -6,8 +6,8 @@ export default function Login() {
   const onSubmit = async () => {};
 
   return (
-    <div className="container relative min-h-screen mx-auto">
-      <form className="flex flex-col w-full md:w-1/2 xl:w-1/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="container relative min-h-screen mx-auto text-center">
+      <form className="flex flex-col w-full md:w-1/2 xl:w-1/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left">
         <div>
           <div>
             <Label htmlFor="email" value="Your email" />
