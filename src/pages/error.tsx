@@ -31,7 +31,11 @@ export default function Error() {
         <p className="font-normal text-gray-700 dark:text-gray-400">
           {getRouteErrorMessage()}
         </p>
-        <Button type="button">Back to home page</Button>
+        <div className="w-full">
+          <Button className="mx-auto" type="button">
+            Back to home page
+          </Button>
+        </div>
       </div>
     </div>
   );
