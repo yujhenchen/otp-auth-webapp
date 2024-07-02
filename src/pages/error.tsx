@@ -1,5 +1,6 @@
 import { Button } from "flowbite-react";
 import { isRouteErrorResponse, useRouteError } from "react-router-dom";
+import PageContainer from "../components/page.container";
 
 export default function Error() {
   const error = useRouteError();
@@ -20,7 +21,7 @@ export default function Error() {
     isRouteErrorResponse(error) ? routeError[error.status] : "Unknown error";
 
   return (
-    <div className="container relative min-h-screen mx-auto text-center">
+    <PageContainer>
       <div className="flex flex-col w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1 className="text-6xl font-bold tracking-tight text-gray-900 dark:text-white">
           Uh-oh
@@ -37,6 +38,6 @@ export default function Error() {
           </Button>
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 }

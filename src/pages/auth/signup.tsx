@@ -1,10 +1,11 @@
 import { Button, Label, TextInput } from "flowbite-react";
 import { HiMail, HiUser } from "react-icons/hi";
+import PageContainer from "../../components/page.container";
 
 export default function SignUp() {
   function onSubmit() {}
   return (
-    <div className="container relative min-h-screen mx-auto text-center">
+    <PageContainer>
       <form className="flex flex-col w-full md:w-1/2 xl:w-1/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left">
         <div>
           <div>
@@ -49,6 +50,6 @@ export default function SignUp() {
           Sign Up
         </Button>
       </form>
-    </div>
+    </PageContainer>
   );
 }
