@@ -63,7 +63,7 @@ export default function Login() {
   const [token, setToken] = useState<string>("");
   const [otp, setOtp] = useState<string>("");
 
-  const onSubmit = async () => {};
+  const signIn = async () => {};
   const verifyOTP = async () => {};
 
   return (
@@ -91,9 +91,7 @@ export default function Login() {
               <TextInput id="password" type="password" required />
             </div>
 
-            <Button type="submit" onSubmit={onSubmit}>
-              Sign In
-            </Button>
+            <Button onClick={signIn}>Get OTP</Button>
           </div>
         )}
         {!user && token && (
